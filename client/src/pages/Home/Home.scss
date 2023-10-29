@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
+
+.header{
+    background-image: url('../../assets/Rectangle 19290.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+
+    .header_text{
+        padding-top: 10rem;
+        position: relative;
+
+        img{
+            width: 70px;
+            margin-bottom: -1rem;
+        }
+        h1{
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .reachout{
+            background-color: rgba($color: #fff, $alpha: 0.5);
+            padding: 1rem;
+            border-radius: 5px;
+
+            input[type="text"]{
+                padding: .5rem;
+                border-radius: 5px;
+                background-color: transparent;
+                color: #424242;
+                font-size: 1.3rem;
+            }
+            input[type="text"]::placeholder{
+                color: #424242;
+                font-size: 1.3rem;
+            }
+            input[type="text"]:focus{
+                outline: none;
+                border: none;
+            }
+            input[type="submit"]{
+                color: #fff;
+                background-color: #DF6951;
+                padding: .5rem 2rem;
+                border-radius: 5px;
+                transition: all ease in out;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover{
+                background-color: #9b3622;
+            }
+        }
+        .group_people{
+            img{
+                width: 150px;
+                margin-top: -1rem;
+            }
+        }
+
+    }
+}
+
+.partners{
+    z-index: 10;
+    padding: 2rem;
+    flex-wrap: wrap;
+
+    img{
+        width: 100px;
+    }
+}
+
+.category{
+    padding: 3rem 0rem;
+
+    div{
+        margin-top: 2rem;
+        .section_card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+            background-color: rgba($color: #dad7d7, $alpha: 0.1);
+            padding: 1.2rem;
+            border-radius: 2rem;
+            box-shadow: 0px 39px 22px -28px rgba(0,0,0,0.1);
+            transition: all ease-in-out 300ms;
+            position: relative;
+            cursor: default;
+            z-index: 1;
+
+            .section_card_image{
+                display: flex;
+                justify-content: center;
+
+                img{
+                    width: 50px;
+                }
+            }
+            h4{
+                font-weight: 600;
+                color: #1E1D4C;
+            }
+            .section_box{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 50px;
+                height: 50px;
+                background-color: rgba($color: #DF6951, $alpha: 0);
+                border-radius: 10px;
+                z-index: -1;
+                transform: translate(0, 0);
+                transition: all 0.3s ease-in-out; 
+            }
+        }
+        .section_card:hover{
+            transform: translateY(-2rem);
+            background-color: rgba($color: #dad7d7, $alpha: 0.3);
+        }
+        .section_card:hover .section_box{
+            transform: translate(-2rem, 2rem);
+            background-color: rgba($color: #DF6951, $alpha: 0.7);
+        }
+    }
+}
+
+.honeymoon_section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    /* border: 1px solid; */
+
+    .honeymoon_section_image{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* border: 1px solid; */
+        position: relative;
+
+        .h1{
+            transform: rotate(-90deg);
+            transform-origin: bottom left;
+            display: inline;
+            z-index: 1;
+            /* width: 200px; */
+            height: fit-content;
+            /* border: 1px solid; */
+            padding: 0;
+            position: absolute;
+            left: 17%;
+            bottom: 0;
+            font-size: 2rem;
+            font-weight: 900;
+            color: rgba($color: #000000, $alpha: 0.1);
+        }
+        .h_image{
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background-image: url("../../assets/honeymoon/Mask\ Group.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            span{
+                position: absolute;
+                display: none;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .h_rounded_square{
+                display: block;
+                width: 300px;
+                height: 410px;
+                position: absolute;
+                top: -3%;
+                right: -5%;
+                z-index: -1;
+                background-image: url("../../assets/honeymoon/Rectangle\ 10.png");
+            }
+            .h_rounded_rectangle{
+                display: block;
+                background-image: url(../../assets//honeymoon/BackgroundElement.png);
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                bottom: -10%;
+                right: -10%;
+            }
+            .h_image_first{
+                display: block;
+                background-image: url("../../assets/honeymoon/Ellipse1.png");
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                top: -8%;
+                left: -8%;
+            }
+            .h_image_second{
+                display: block;
+                background-image: url("../../assets/honeymoon/Ellipse2.png");
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                top: 20%;
+                left: -40%;
+            }
+            .h_image_third{
+                display: block;
+                background-image: url("../../assets/honeymoon/Ellipse3.png");
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                top: -12%;
+                right: 30%;
+            }
+        }
+        }
+
+}
+
+.fast_and_Easy{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    place-self: start;
+    padding: 5rem 0rem;
+
+    .bookings{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .booking_options{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            .booking_options_text{
+                h5{
+                    font-size: .8rem;
+                    font-weight: 800;
+                    color: #5E6282;
+                }
+                p{
+                    font-size: .8rem;
+                    color: #5E6282;
+                }
+            }
+        }
+    }
+
+    .fast_bookings{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .fast_image{
+            padding: 1rem;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            box-shadow: -100px -100px 73px -84px #59B1E6,0px 34px 44px -14px rgba(0,0,0,0.1);
+            border-radius: 1rem;
+            position: relative;
+
+            .f_img{
+                width: 15rem;
+            }
+            .f_opt{
+                width: 100px;
+            }
+            .fast_square{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-image: url("../../assets/honeymoon/BackgroundElement.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                bottom: -10%;
+                left: -10%;
+                z-index: -1;
+            }
+            .fast_sidebar{
+                position: absolute;
+                top: 50%;
+                right: -50%;
+                background-color: #fff;
+                box-shadow: 7px 9px 15px rgba($color: #000000, $alpha: 0.1);
+                border-radius: 1rem;
+                padding: .5rem;
+
+                .fast_sidebar_image{
+                    width: 30px;
+                    height: 30px;
+                }
+                div{
+                    p{
+                        font-size: .7rem;
+                    }
+                    h5{
+                        font-size: .9rem;
+                    }
+                    h3{
+                        font-size: .8rem;
+                        span{
+                            font-size: .7rem;
+                        }
+                    }
+                }
+            }
+            .fast_air{
+                background-image: url('../../assets/fastandeasy/image\ 872.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 250px;
+                height: 250px;
+                position: absolute;
+                top: -20%;
+                right: -80%;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.statue{
+    margin: 5rem 0rem;
+    background-image: url("../../assets/Rectangle\ 19294.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+
+    .statue_header{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        transform: translate(-30%, -30%);
+        font-size: 2.5rem;
+        color: #fff;
+    }
+    span{
+        background-image: url("../../assets/Line-1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 13rem;
+        height: 13rem;
+        position: absolute;
+        top: 60%;
+        left: 48%;
+        transform: translate(-60%, -48%);
+    }
+
+}
+
+.bt{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-content: space-between;
+    margin: 5rem 0rem;
+
+    .bt_text{
+        overflow-x: visible;
+
+        .bt_text_images{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            /* flex-wrap: wrap; */
+
+            div{
+                width: 100px;
+            }
+        }
+    }
+
+    .bt_image{
+        width: 400px;
+        height: 500px;
+        background-image: url("../../assets/bt/Mask\ Group.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+
+        .bt_head{
+            position: absolute;
+            transform: rotate(-90deg);
+            transform-origin: bottom right;
+            bottom: 65%;
+            right: -7%;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: rgba($color: #000000, $alpha: 0.1);
+        }
+
+        span{
+            position: absolute;
+            top: -2%;
+            width: 400px;
+            height: 500px;
+            z-index: -1;
+        }
+    }
+}
+
+.explore{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5rem 0rem;
+
+    .explore_nature{
+        background-image: url("../../assets/explore1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+
+        h3, h1{
+            text-shadow: 1px 1px 2px #000;
+        }
+        button{
+            background-color: transparent;
+            border: 1px solid #fff;
+            border-radius: 1rem;
+            padding: .5rem 1rem;
+            transition: all ease-in-out 300ms;
+        }
+        button:hover{
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    .explore_cities{
+        background-image: url("../../assets/explore2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        
+        h3, h1{
+            text-shadow: 1px 1px 2px #000;
+        }
+        button{
+            background-color: transparent;
+            border: 1px solid #fff;
+            border-radius: 1rem;
+            padding: .5rem 1rem;
+            transition: all ease-in-out 300ms;
+        }
+        button:hover{
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
