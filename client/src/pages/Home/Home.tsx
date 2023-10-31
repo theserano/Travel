@@ -26,6 +26,14 @@ import d2 from "../../assets/bt/Destination 2.png";
 import d3 from "../../assets/bt/Destination 3.png";
 import d4 from "../../assets/bt/Destination 4.png";
 import bt_round from "../../assets/bt/Rectangle 19299.png";
+import Card from "../../components/Card/Card";
+import bg1 from "../../assets/trendy/bg1.png";
+import bg2 from "../../assets/trendy/bg2.png";
+import bg3 from "../../assets/trendy/bg3.png";
+import flag1 from "../../assets/trendy/flag1.png"
+import flag2 from "../../assets/trendy/flag2.png"
+import flag3 from "../../assets/trendy/flag3.png"
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -259,12 +267,51 @@ const Home = () => {
       </div>
 
       {/* TRENDY */}
-      <section className="trendy w-2/3 mx-auto flex justify-center items-center gap-4 ">
+      <section className="trendy w-2/3 mx-auto flex flex-col justify-center items-center gap-4 py-20">
 
         <h3 className="text-sm font-bold">TRENDY</h3>
-        <h1 className="text-3xl font-bold">Our Trending Tour <br />Packages</h1>
+        <h1 className="text-3xl font-bold text-center">Our Trending Tour <br />Packages</h1>
+
+        <article className="flex gap-8 justify-start mx-auto">
+
+          <div className="article">
+            <Card
+              image={bg1}
+              flag={flag1}
+              people="25"
+              country="Switzerland"
+              location="Europe"
+              price="$1,000"
+            />
+          </div>
+
+          <div className="article">
+            <Card
+              image={bg2}
+              flag={flag2}
+              people="30"
+              country="Amazon"
+              location="Brazil"
+              price="$1,223"
+            />
+          </div>
+
+          <div className="article">
+            <Card
+              image={bg3}
+              flag={flag3}
+              people="$1,200"
+              country="Giza"
+              location="Egypt"
+              price="$1,000"
+            />
+          </div>
+          
+        </article>
 
       </section>
+
+      <Footer />
 
     </div>
   );

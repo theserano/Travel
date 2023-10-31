@@ -1,0 +1,25 @@
+
+.form{
+    display: flex;
+    flex-direction: row;
+
+    .i_text{
+        background-color: #EEEEFF;
+        padding: .5em;
+        width: 250px;
+        font-size: .8rem;
+    }
+    .i_text:focus{
+        outline: none;
+        border: none;
+    }
+    .i_sub{
+        background-color: #DF6951;
+        color: #fff;
+        border-radius: 10px;
+        padding: .5rem 1rem;
+        margin-left: -.5rem;
+        z-index: 1;
+        font-size: .8rem;
+    }
+}
